@@ -1,0 +1,30 @@
+# auditory-cortex
+
+> Real-time music analysis in the browser with plain DSP (WebAudio AnalyserNode, no ML, zero dependencies). One call per frame, `cortex.bands()`, returns ~50 fields: bass/mid/high levels, beat/kick envelopes, BPM, key (pitch class), chord/key/rhythm-change events, build-up/drop detection, heuristic instrument and genre labels, and raw spectra. A companion package provides React Three Fiber layers that react to it.
+
+Packages:
+- `@cortexlabs/auditory-cortex`: the engine. `createAudioCortex()` factory plus a shared `audioCortex` instance. Sources: `loadFile`, `loadUrl`, `useMic`, `useTab` (getDisplayMedia tab/system audio), `useStream`, `useNode`. Also `createColorMapper()` for music → colour (HSL/hex).
+- `@cortexlabs/auditory-cortex-r3f`: R3F layers (`BassDust`, `LatticeShapes`, `EqualizerBars`, `SpectrumDust`, `SpectralOrbit`, `BeatLattice`, `InstrumentOrbits`, `PulseField`) and an optional `<AuditoryCortex>` provider. Peers: react, three, @react-three/fiber, @react-three/drei.
+
+Key facts for code generation:
+- Source methods must be called from a user gesture (click), because of browser autoplay rules.
+- `bands()` returns one reused object. Call it every frame (it caches for 8 ms) and copy the values you keep.
+- Envelope fields (`beat`, `kick`, `deepKick`, `drop`, `keyChange`, `chordChange`, `rhythmChange`, `sectionChange`, `percussiveOnset`) jump to 1 on an event and decay.
+- Most fields are normalised to 0–1. The exceptions are `bpm` (beats per minute), `beatDensity` (beats/s), `instrumentCount` (count), `pitchClass` (integer 0–11) and `mfcc`.
+- Mic and tab audio are analysed only, never played back. Files, URLs and `useNode(…, {monitor:true})` play through the speakers.
+- DRM streams (Spotify etc.) can't be read directly. Use `useTab()` or `useMic()`.
+
+## Docs
+
+- [Getting started](getting-started.md): install, sources, the frame loop, colour, React state, multiple engines
+- [bands() reference](bands-reference.md): every field with range, units and behaviour
+- [R3F components](r3f-components.md): modes, per-layer props, provider, writing your own layer
+
+## Recipes
+
+- [Spectral colour](recipes/spectral-colour.md): core only, bands → CSS colour, meters, 24-band canvas
+- [Composed field](recipes/composed-field.md): every R3F layer in orbit/journey/spectral, with bloom
+
+## Optional
+
+- [Example source](https://github.com/cortexlabs/auditory-cortex/tree/main/examples/src)

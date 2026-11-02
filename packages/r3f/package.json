@@ -1,0 +1,44 @@
+{
+  "name": "@cortexlabs/auditory-cortex-r3f",
+  "version": "0.1.0",
+  "description": "Audio-reactive React Three Fiber fields — dust, lattices, equalizer rings, instrument orbits — driven by @cortexlabs/auditory-cortex.",
+  "license": "MIT",
+  "author": "Cortex Labs (https://cortexlabs.cc)",
+  "homepage": "https://cortexlabs.cc/tools/auditory-cortex",
+  "keywords": ["react-three-fiber", "r3f", "three", "audio-reactive", "visualizer", "music", "webaudio"],
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": { "types": "./dist/index.d.ts", "default": "./dist/index.js" },
+      "require": { "types": "./dist/index.d.cts", "default": "./dist/index.cjs" }
+    },
+    "./package.json": "./package.json"
+  },
+  "files": ["dist", "README.md"],
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@cortexlabs/auditory-cortex": "^0.1.0"
+  },
+  "peerDependencies": {
+    "@react-three/drei": ">=9.100.0",
+    "@react-three/fiber": ">=8.15.0",
+    "react": ">=18.0.0",
+    "three": ">=0.160.0"
+  },
+  "devDependencies": {
+    "@react-three/drei": "^9.122.0",
+    "@react-three/fiber": "^8.18.0",
+    "@types/react": "^18.3.31",
+    "@types/three": "~0.169.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "~0.169.0"
+  }
+}

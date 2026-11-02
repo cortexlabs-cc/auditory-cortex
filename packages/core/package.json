@@ -1,0 +1,26 @@
+{
+  "name": "@cortexlabs/auditory-cortex",
+  "version": "0.1.0",
+  "description": "Real-time music analysis in the browser with plain DSP: bass/mid/high, beat, kick, BPM, key, chord changes, build-ups, drops and instrument guesses — ~25 signals per frame, no ML, zero dependencies.",
+  "license": "MIT",
+  "author": "Cortex Labs (https://cortexlabs.cc)",
+  "homepage": "https://cortexlabs.cc/tools/auditory-cortex",
+  "keywords": ["audio", "webaudio", "music", "beat-detection", "bpm", "key-detection", "audio-reactive", "visualizer", "dsp"],
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": { "types": "./dist/index.d.ts", "default": "./dist/index.js" },
+      "require": { "types": "./dist/index.d.cts", "default": "./dist/index.cjs" }
+    },
+    "./package.json": "./package.json"
+  },
+  "files": ["dist", "README.md"],
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc -p tsconfig.json"
+  }
+}

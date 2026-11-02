@@ -1,0 +1,26 @@
+{
+  "name": "auditory-cortex-monorepo",
+  "private": true,
+  "version": "0.0.0",
+  "description": "In-browser music analysis (beat, tempo, key, chords, build-ups, instruments) with plain DSP — and React Three Fiber components that dance to it.",
+  "license": "MIT",
+  "type": "module",
+  "workspaces": [
+    "packages/core",
+    "packages/r3f",
+    "examples"
+  ],
+  "scripts": {
+    "build": "npm run build:packages && npm run build -w examples",
+    "build:packages": "npm run build -w @cortexlabs/auditory-cortex && npm run build -w @cortexlabs/auditory-cortex-r3f",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "dev": "npm run dev -w examples"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
