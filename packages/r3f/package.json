@@ -1,7 +1,7 @@
 {
-  "name": "@cortexlabs/auditory-cortex-r3f",
+  "name": "@cortexlabs_cc/auditory-cortex-r3f",
   "version": "0.1.0",
-  "description": "Audio-reactive React Three Fiber fields — dust, lattices, equalizer rings, instrument orbits — driven by @cortexlabs/auditory-cortex.",
+  "description": "Audio-reactive React Three Fiber fields — dust, lattices, equalizer rings, instrument orbits — driven by @cortexlabs_cc/auditory-cortex.",
   "license": "MIT",
   "author": "Cortex Labs (https://cortexlabs.cc)",
   "homepage": "https://cortexlabs.cc/tools/auditory-cortex",
@@ -24,7 +24,7 @@
     "typecheck": "tsc -p tsconfig.json"
   },
   "dependencies": {
-    "@cortexlabs/auditory-cortex": "^0.1.0"
+    "@cortexlabs_cc/auditory-cortex": "^0.1.0"
   },
   "peerDependencies": {
     "@react-three/drei": ">=9.100.0",

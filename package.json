@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "build": "npm run build:packages && npm run build -w examples",
-    "build:packages": "npm run build -w @cortexlabs/auditory-cortex && npm run build -w @cortexlabs/auditory-cortex-r3f",
+    "build:packages": "npm run build -w @cortexlabs_cc/auditory-cortex && npm run build -w @cortexlabs_cc/auditory-cortex-r3f",
     "typecheck": "npm run typecheck --workspaces --if-present",
     "dev": "npm run dev -w examples"
   },

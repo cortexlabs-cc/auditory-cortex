@@ -1,5 +1,5 @@
 import { useRef, useState, useSyncExternalStore } from 'react'
-import { audioCortex as cortex } from '@cortexlabs/auditory-cortex'
+import { audioCortex as cortex } from '@cortexlabs_cc/auditory-cortex'
 import { startDemoSynth, type DemoSynth } from './demoSynth'
 
 /** Picks what the shared `audioCortex` listens to: a file, the mic, a tab, or the demo groove. */

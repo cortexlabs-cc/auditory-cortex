@@ -8,7 +8,7 @@ drives a CSS background, an orb that pulses on the kick, a few meters and a 24-b
 ## The loop
 
 ```ts
-import { audioCortex, createColorMapper, hslToHex, PITCH_CLASSES } from '@cortexlabs/auditory-cortex'
+import { audioCortex, createColorMapper, hslToHex, PITCH_CLASSES } from '@cortexlabs_cc/auditory-cortex'
 
 const colors = createColorMapper()   // one per visual: it holds easing state
 

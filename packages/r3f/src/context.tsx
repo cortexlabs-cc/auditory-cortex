@@ -10,7 +10,7 @@ import {
   type ColorMapper,
   type Flavor,
   type Instrument,
-} from '@cortexlabs/auditory-cortex'
+} from '@cortexlabs_cc/auditory-cortex'
 
 /** Colour theme for the fields. `a`/`b` are the gradient ends, `spark` the accent,
  *  `palette` the lattice colours. These are the idle colours; once music plays the

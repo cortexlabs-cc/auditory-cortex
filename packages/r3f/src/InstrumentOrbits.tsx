@@ -1,7 +1,7 @@
 import { useMemo, useRef } from 'react'
 import { useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
-import { INSTRUMENT_SPARKS, type Instrument } from '@cortexlabs/auditory-cortex'
+import { INSTRUMENT_SPARKS, type Instrument } from '@cortexlabs_cc/auditory-cortex'
 import { smoothColor, useAuditoryCortex } from './context'
 import { SPIN, swirlSpeed, type FieldMode } from './motion'
 import { useGlowTexture } from './useGlowTexture'

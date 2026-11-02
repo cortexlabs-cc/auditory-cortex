@@ -8,7 +8,7 @@ same composition as the Cortex Labs `/pulse` visualizer, without the site's mode
 ```tsx
 import { Canvas } from '@react-three/fiber'
 import { Bloom, EffectComposer, Vignette } from '@react-three/postprocessing'
-import { AuditoryCortex, PulseField, PULSE_THEMES } from '@cortexlabs/auditory-cortex-r3f'
+import { AuditoryCortex, PulseField, PULSE_THEMES } from '@cortexlabs_cc/auditory-cortex-r3f'
 
 <Canvas dpr={[1, 2]} camera={{ position: [0, 0.7, 5.4], fov: 50 }}>
   <color attach="background" args={['#04060E']} />

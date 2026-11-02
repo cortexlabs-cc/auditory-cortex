@@ -12,8 +12,8 @@ export default defineConfig(({ command }) => ({
     command === 'serve'
       ? {
           alias: {
-            '@cortexlabs/auditory-cortex-r3f': src('../packages/r3f/src/index.ts'),
-            '@cortexlabs/auditory-cortex': src('../packages/core/src/index.ts'),
+            '@cortexlabs_cc/auditory-cortex-r3f': src('../packages/r3f/src/index.ts'),
+            '@cortexlabs_cc/auditory-cortex': src('../packages/core/src/index.ts'),
           },
         }
       : {},

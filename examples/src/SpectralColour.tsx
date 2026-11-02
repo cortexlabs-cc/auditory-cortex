@@ -1,7 +1,7 @@
 /* Example 1 — spectral-only: bands → colour, no three.js.
    The core package alone drives a CSS background, a few meters and a 24-band canvas. */
 import { useEffect, useRef } from 'react'
-import { audioCortex as cortex, createColorMapper, hslToHex, PITCH_CLASSES } from '@cortexlabs/auditory-cortex'
+import { audioCortex as cortex, createColorMapper, hslToHex, PITCH_CLASSES } from '@cortexlabs_cc/auditory-cortex'
 
 const meters = ['bass', 'mid', 'high', 'beat', 'kick', 'buildup', 'drop', 'intensity'] as const
 

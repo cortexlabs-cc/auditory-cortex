@@ -24,5 +24,5 @@ jobs:
         run: npm run typecheck
       - name: Pack (dry run)
         run: |
-          npm pack --dry-run -w @cortexlabs/auditory-cortex
-          npm pack --dry-run -w @cortexlabs/auditory-cortex-r3f
+          npm pack --dry-run -w @cortexlabs_cc/auditory-cortex
+          npm pack --dry-run -w @cortexlabs_cc/auditory-cortex-r3f

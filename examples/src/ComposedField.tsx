@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
 import { Bloom, EffectComposer, Vignette } from '@react-three/postprocessing'
-import { AuditoryCortex, PulseField, PULSE_THEMES, type FieldMode } from '@cortexlabs/auditory-cortex-r3f'
+import { AuditoryCortex, PulseField, PULSE_THEMES, type FieldMode } from '@cortexlabs_cc/auditory-cortex-r3f'
 
 const MODES: FieldMode[] = ['orbit', 'journey', 'spectral']
 

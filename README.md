@@ -7,11 +7,11 @@ tab's audio.
 
 | Package | What |
 |---|---|
-| [`@cortexlabs/auditory-cortex`](packages/core) | The analysis engine + music → colour mapping |
-| [`@cortexlabs/auditory-cortex-r3f`](packages/r3f) | React Three Fiber layers that react to it |
+| [`@cortexlabs_cc/auditory-cortex`](packages/core) | The analysis engine + music → colour mapping |
+| [`@cortexlabs_cc/auditory-cortex-r3f`](packages/r3f) | React Three Fiber layers that react to it |
 
 ```ts
-import { audioCortex } from '@cortexlabs/auditory-cortex'
+import { audioCortex } from '@cortexlabs_cc/auditory-cortex'
 
 button.onclick = () => audioCortex.useMic()
 ;(function frame() {
@@ -23,7 +23,7 @@ button.onclick = () => audioCortex.useMic()
 
 ```tsx
 import { Canvas } from '@react-three/fiber'
-import { PulseField } from '@cortexlabs/auditory-cortex-r3f'
+import { PulseField } from '@cortexlabs_cc/auditory-cortex-r3f'
 
 <Canvas camera={{ position: [0, 0.7, 5.4] }}>
   <PulseField mode="spectral" />

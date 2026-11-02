@@ -8,5 +8,5 @@ export default defineConfig({
   clean: true,
   target: 'es2020',
   // peer deps + their subpaths (three/examples/jsm/…) stay external
-  external: [/^three(\/.*)?$/, /^react(\/.*)?$/, /^@react-three\//, /^@cortexlabs\//],
+  external: [/^three(\/.*)?$/, /^react(\/.*)?$/, /^@react-three\//, /^@cortexlabs_cc\//],
 })

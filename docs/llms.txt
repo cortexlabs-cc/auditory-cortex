@@ -3,8 +3,8 @@
 > Real-time music analysis in the browser with plain DSP (WebAudio AnalyserNode, no ML, zero dependencies). One call per frame, `cortex.bands()`, returns ~50 fields: bass/mid/high levels, beat/kick envelopes, BPM, key (pitch class), chord/key/rhythm-change events, build-up/drop detection, heuristic instrument and genre labels, and raw spectra. A companion package provides React Three Fiber layers that react to it.
 
 Packages:
-- `@cortexlabs/auditory-cortex`: the engine. `createAudioCortex()` factory plus a shared `audioCortex` instance. Sources: `loadFile`, `loadUrl`, `useMic`, `useTab` (getDisplayMedia tab/system audio), `useStream`, `useNode`. Also `createColorMapper()` for music → colour (HSL/hex).
-- `@cortexlabs/auditory-cortex-r3f`: R3F layers (`BassDust`, `LatticeShapes`, `EqualizerBars`, `SpectrumDust`, `SpectralOrbit`, `BeatLattice`, `InstrumentOrbits`, `PulseField`) and an optional `<AuditoryCortex>` provider. Peers: react, three, @react-three/fiber, @react-three/drei.
+- `@cortexlabs_cc/auditory-cortex`: the engine. `createAudioCortex()` factory plus a shared `audioCortex` instance. Sources: `loadFile`, `loadUrl`, `useMic`, `useTab` (getDisplayMedia tab/system audio), `useStream`, `useNode`. Also `createColorMapper()` for music → colour (HSL/hex).
+- `@cortexlabs_cc/auditory-cortex-r3f`: R3F layers (`BassDust`, `LatticeShapes`, `EqualizerBars`, `SpectrumDust`, `SpectralOrbit`, `BeatLattice`, `InstrumentOrbits`, `PulseField`) and an optional `<AuditoryCortex>` provider. Peers: react, three, @react-three/fiber, @react-three/drei.
 
 Key facts for code generation:
 - Source methods must be called from a user gesture (click), because of browser autoplay rules.

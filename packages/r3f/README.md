@@ -1,15 +1,15 @@
-# @cortexlabs/auditory-cortex-r3f
+# @cortexlabs_cc/auditory-cortex-r3f
 
-Audio-reactive React Three Fiber layers driven by [`@cortexlabs/auditory-cortex`](../core).
+Audio-reactive React Three Fiber layers driven by [`@cortexlabs_cc/auditory-cortex`](../core).
 
 ```bash
-npm install @cortexlabs/auditory-cortex-r3f three @react-three/fiber @react-three/drei
+npm install @cortexlabs_cc/auditory-cortex-r3f three @react-three/fiber @react-three/drei
 ```
 
 ```tsx
 import { Canvas } from '@react-three/fiber'
-import { audioCortex } from '@cortexlabs/auditory-cortex'
-import { PulseField } from '@cortexlabs/auditory-cortex-r3f'
+import { audioCortex } from '@cortexlabs_cc/auditory-cortex'
+import { PulseField } from '@cortexlabs_cc/auditory-cortex-r3f'
 
 <button onClick={() => audioCortex.useMic()}>listen</button>
 <Canvas camera={{ position: [0, 0.7, 5.4] }}>

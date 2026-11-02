@@ -1,5 +1,5 @@
 {
-  "name": "@cortexlabs/auditory-cortex",
+  "name": "@cortexlabs_cc/auditory-cortex",
   "version": "0.1.0",
   "description": "Real-time music analysis in the browser with plain DSP: bass/mid/high, beat, kick, BPM, key, chord changes, build-ups, drops and instrument guesses — ~25 signals per frame, no ML, zero dependencies.",
   "license": "MIT",

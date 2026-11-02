@@ -3,13 +3,13 @@
 ## Install
 
 ```bash
-npm install @cortexlabs/auditory-cortex
+npm install @cortexlabs_cc/auditory-cortex
 ```
 
 For the React Three Fiber components:
 
 ```bash
-npm install @cortexlabs/auditory-cortex-r3f three @react-three/fiber @react-three/drei
+npm install @cortexlabs_cc/auditory-cortex-r3f three @react-three/fiber @react-three/drei
 ```
 
 ## 1. Pick a source
@@ -17,7 +17,7 @@ npm install @cortexlabs/auditory-cortex-r3f three @react-three/fiber @react-thre
 Browsers only start audio after a user gesture, so call a source method from a click handler.
 
 ```ts
-import { audioCortex } from '@cortexlabs/auditory-cortex'
+import { audioCortex } from '@cortexlabs_cc/auditory-cortex'
 
 fileInput.onchange = () => audioCortex.loadFile(fileInput.files![0]) // plays through the speakers
 micButton.onclick   = () => audioCortex.useMic()                     // analysis only, never played back
@@ -56,7 +56,7 @@ See the [bands reference](./bands-reference.md) for every field.
 ## 3. Colour
 
 ```ts
-import { createColorMapper, hslToHex } from '@cortexlabs/auditory-cortex'
+import { createColorMapper, hslToHex } from '@cortexlabs_cc/auditory-cortex'
 const colors = createColorMapper()
 const { h, s, l } = colors.spectral(audioCortex.bands())
 document.body.style.background = hslToHex(h, s, l)
@@ -74,7 +74,7 @@ To pin the hue, set `colors.hueOverride = 0.6`.
 const { mode, playing, trackName } = useSyncExternalStore(audioCortex.subscribe, audioCortex.getState)
 ```
 
-(`@cortexlabs/auditory-cortex-r3f` exports this as `useAudioCortexState()`.)
+(`@cortexlabs_cc/auditory-cortex-r3f` exports this as `useAudioCortexState()`.)
 
 ## 5. Several engines
 
@@ -82,7 +82,7 @@ const { mode, playing, trackName } = useSyncExternalStore(audioCortex.subscribe,
 create more:
 
 ```ts
-import { createAudioCortex } from '@cortexlabs/auditory-cortex'
+import { createAudioCortex } from '@cortexlabs_cc/auditory-cortex'
 const deckA = createAudioCortex()
 const deckB = createAudioCortex({ audioContext: deckA.context }) // share one AudioContext
 ```
@@ -91,7 +91,7 @@ const deckB = createAudioCortex({ audioContext: deckA.context }) // share one Au
 
 ```tsx
 import { Canvas } from '@react-three/fiber'
-import { PulseField } from '@cortexlabs/auditory-cortex-r3f'
+import { PulseField } from '@cortexlabs_cc/auditory-cortex-r3f'
 
 <Canvas camera={{ position: [0, 0.7, 5.4] }}>
   <PulseField mode="spectral" />

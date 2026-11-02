@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import type { AudioBands } from '@cortexlabs/auditory-cortex'
+import type { AudioBands } from '@cortexlabs_cc/auditory-cortex'
 
 /** Which layout a field uses: `orbit` (a ring around the origin), `journey` (a tube
  *  streaming past the camera along z) or `spectral` (orbit, coloured by the spectral

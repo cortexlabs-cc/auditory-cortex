@@ -1,6 +1,6 @@
 # R3F components
 
-`@cortexlabs/auditory-cortex-r3f` contains audio-reactive layers for React Three Fiber. Every layer
+`@cortexlabs_cc/auditory-cortex-r3f` contains audio-reactive layers for React Three Fiber. Every layer
 reads `cortex.bands()` inside `useFrame` and mutates its objects directly, so no React re-renders
 happen per frame.
 

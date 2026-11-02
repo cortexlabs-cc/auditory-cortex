@@ -9,8 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@cortexlabs/auditory-cortex": "*",
-    "@cortexlabs/auditory-cortex-r3f": "*",
+    "@cortexlabs_cc/auditory-cortex": "*",
+    "@cortexlabs_cc/auditory-cortex-r3f": "*",
     "@react-three/drei": "^9.122.0",
     "@react-three/fiber": "^8.18.0",
     "@react-three/postprocessing": "^2.19.1",

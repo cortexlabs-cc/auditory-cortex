@@ -1,13 +1,13 @@
-# @cortexlabs/auditory-cortex
+# @cortexlabs_cc/auditory-cortex
 
 Real-time music analysis in the browser using plain DSP, with zero dependencies.
 
 ```bash
-npm install @cortexlabs/auditory-cortex
+npm install @cortexlabs_cc/auditory-cortex
 ```
 
 ```ts
-import { audioCortex, createColorMapper, hslToHex } from '@cortexlabs/auditory-cortex'
+import { audioCortex, createColorMapper, hslToHex } from '@cortexlabs_cc/auditory-cortex'
 
 button.onclick = () => audioCortex.useMic() // or loadFile(file), loadUrl(url), useTab()
 
