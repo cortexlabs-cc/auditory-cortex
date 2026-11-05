@@ -22,6 +22,8 @@ jobs:
         run: npm run build
       - name: Typecheck
         run: npm run typecheck
+      - name: Agent skill references in sync with docs/
+        run: node scripts/sync-skill-refs.mjs --check
       - name: Pack (dry run)
         run: |
           npm pack --dry-run -w @cortexlabs_cc/auditory-cortex

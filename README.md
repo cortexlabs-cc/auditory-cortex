@@ -38,6 +38,18 @@ import { PulseField } from '@cortexlabs_cc/auditory-cortex-r3f'
 - Recipes: [spectral colour](docs/recipes/spectral-colour.md) · [composed field](docs/recipes/composed-field.md)
 - [`llms.txt`](docs/llms.txt): an index for coding agents
 
+## Agent skill (Claude Code plugin)
+
+This repo is also a Claude Code plugin marketplace. Its `auditory-cortex` skill teaches Claude to use the packages:
+which one to pick, the frame loop, which field drives what, the R3F layers, and how to test without a microphone.
+
+```
+/plugin install auditory-cortex --marketplace cortexlabs/auditory-cortex
+```
+
+The skill lives in [`plugins/auditory-cortex`](plugins/auditory-cortex). Its `references/` are copies of `docs/`;
+after editing the docs, run `npm run sync:skill` (CI fails when they drift).
+
 ## Development
 
 ```bash

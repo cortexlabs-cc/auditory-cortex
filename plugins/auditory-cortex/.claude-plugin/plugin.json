@@ -1,0 +1,12 @@
+{
+  "name": "auditory-cortex",
+  "version": "0.1.0",
+  "description": "Teaches Claude to build audio-reactive web visuals with @cortexlabs_cc/auditory-cortex: in-browser beat, BPM, key, build-up/drop and instrument detection, music → colour, and React Three Fiber layers.",
+  "author": {
+    "name": "Cortex Labs",
+    "url": "https://cortexlabs.cc"
+  },
+  "homepage": "https://cortexlabs.cc/tools/auditory-cortex",
+  "license": "MIT",
+  "keywords": ["audio", "music", "visualizer", "webaudio", "react-three-fiber", "beat-detection"]
+}
