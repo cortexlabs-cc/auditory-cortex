@@ -26,6 +26,6 @@ const colors = createColorMapper()
 - `bands()` returns one reused object of ~50 fields, computed at most once per 8 ms.
 - `subscribe` / `getState` are compatible with `useSyncExternalStore`.
 
-Docs: [getting started](../../docs/getting-started.md) · [bands reference](../../docs/bands-reference.md)
+Docs: [cortexlabs.cc/tools/auditory-cortex](https://cortexlabs.cc/tools/auditory-cortex) · [getting started](https://github.com/cortexlabs-cc/auditory-cortex/blob/main/docs/getting-started.md) · [bands reference](https://github.com/cortexlabs-cc/auditory-cortex/blob/main/docs/bands-reference.md)
 
 MIT © Cortex Labs

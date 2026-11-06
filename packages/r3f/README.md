@@ -1,6 +1,6 @@
 # @cortexlabs_cc/auditory-cortex-r3f
 
-Audio-reactive React Three Fiber layers driven by [`@cortexlabs_cc/auditory-cortex`](../core).
+Audio-reactive React Three Fiber layers driven by [`@cortexlabs_cc/auditory-cortex`](https://www.npmjs.com/package/@cortexlabs_cc/auditory-cortex).
 
 ```bash
 npm install @cortexlabs_cc/auditory-cortex-r3f three @react-three/fiber @react-three/drei
@@ -21,6 +21,6 @@ Layers: `BassDust`, `LatticeShapes`, `EqualizerBars`, `SpectrumDust`, `SpectralO
 `InstrumentOrbits`, or all of them at once with `PulseField`. The optional `<AuditoryCortex cortex theme hueOverride>`
 provider picks the engine and colours.
 
-Docs: [R3F components](../../docs/r3f-components.md) · [composed field recipe](../../docs/recipes/composed-field.md)
+Docs: [cortexlabs.cc/tools/auditory-cortex](https://cortexlabs.cc/tools/auditory-cortex) · [R3F components](https://github.com/cortexlabs-cc/auditory-cortex/blob/main/docs/r3f-components.md) · [composed field recipe](https://github.com/cortexlabs-cc/auditory-cortex/blob/main/docs/recipes/composed-field.md)
 
 MIT © Cortex Labs
