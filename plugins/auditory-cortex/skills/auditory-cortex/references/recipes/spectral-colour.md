@@ -1,6 +1,6 @@
 # Recipe: spectral colour (no three.js)
 
-Source: [`examples/src/SpectralColour.tsx`](https://github.com/cortexlabs/auditory-cortex/blob/main/examples/src/SpectralColour.tsx)
+Source: [`examples/src/SpectralColour.tsx`](https://github.com/cortexlabs-cc/auditory-cortex/blob/main/examples/src/SpectralColour.tsx)
 
 This example uses only the core package (zero dependencies). It turns the music into one living colour, then
 drives a CSS background, an orb that pulses on the kick, a few meters and a 24-band canvas from it.

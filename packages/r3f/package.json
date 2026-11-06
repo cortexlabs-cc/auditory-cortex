@@ -5,7 +5,15 @@
   "license": "MIT",
   "author": "Cortex Labs (https://cortexlabs.cc)",
   "homepage": "https://cortexlabs.cc/tools/auditory-cortex",
-  "keywords": ["react-three-fiber", "r3f", "three", "audio-reactive", "visualizer", "music", "webaudio"],
+  "keywords": [
+    "react-three-fiber",
+    "r3f",
+    "three",
+    "audio-reactive",
+    "visualizer",
+    "music",
+    "webaudio"
+  ],
   "type": "module",
   "sideEffects": false,
   "main": "./dist/index.cjs",
@@ -13,12 +21,21 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": { "types": "./dist/index.d.ts", "default": "./dist/index.js" },
-      "require": { "types": "./dist/index.d.cts", "default": "./dist/index.cjs" }
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
     },
     "./package.json": "./package.json"
   },
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsup",
     "typecheck": "tsc -p tsconfig.json"
@@ -40,5 +57,13 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "three": "~0.169.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cortexlabs-cc/auditory-cortex.git",
+    "directory": "packages/r3f"
+  },
+  "bugs": {
+    "url": "https://github.com/cortexlabs-cc/auditory-cortex/issues"
   }
 }

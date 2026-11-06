@@ -18,7 +18,7 @@ const FILES = {
 
 // links that point outside docs/ in the source don't exist inside the plugin
 const rewrite = (text) =>
-  text.replace(/\]\(\.\.\/\.\.\/examples\/src\/([^)]+)\)/g, '](https://github.com/cortexlabs/auditory-cortex/blob/main/examples/src/$1)')
+  text.replace(/\]\(\.\.\/\.\.\/examples\/src\/([^)]+)\)/g, '](https://github.com/cortexlabs-cc/auditory-cortex/blob/main/examples/src/$1)')
 
 const check = process.argv.includes('--check')
 let stale = 0

@@ -5,7 +5,17 @@
   "license": "MIT",
   "author": "Cortex Labs (https://cortexlabs.cc)",
   "homepage": "https://cortexlabs.cc/tools/auditory-cortex",
-  "keywords": ["audio", "webaudio", "music", "beat-detection", "bpm", "key-detection", "audio-reactive", "visualizer", "dsp"],
+  "keywords": [
+    "audio",
+    "webaudio",
+    "music",
+    "beat-detection",
+    "bpm",
+    "key-detection",
+    "audio-reactive",
+    "visualizer",
+    "dsp"
+  ],
   "type": "module",
   "sideEffects": false,
   "main": "./dist/index.cjs",
@@ -13,14 +23,31 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": { "types": "./dist/index.d.ts", "default": "./dist/index.js" },
-      "require": { "types": "./dist/index.d.cts", "default": "./dist/index.cjs" }
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
     },
     "./package.json": "./package.json"
   },
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsup",
     "typecheck": "tsc -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cortexlabs-cc/auditory-cortex.git",
+    "directory": "packages/core"
+  },
+  "bugs": {
+    "url": "https://github.com/cortexlabs-cc/auditory-cortex/issues"
   }
 }

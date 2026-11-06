@@ -44,7 +44,7 @@ This repo is also a Claude Code plugin marketplace. Its `auditory-cortex` skill 
 which one to pick, the frame loop, which field drives what, the R3F layers, and how to test without a microphone.
 
 ```
-/plugin install auditory-cortex --marketplace cortexlabs/auditory-cortex
+/plugin install auditory-cortex --marketplace cortexlabs-cc/auditory-cortex
 ```
 
 The skill lives in [`plugins/auditory-cortex`](plugins/auditory-cortex). Its `references/` are copies of `docs/`;

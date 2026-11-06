@@ -1,6 +1,6 @@
 # Recipe: composed field (R3F)
 
-Source: [`examples/src/ComposedField.tsx`](https://github.com/cortexlabs/auditory-cortex/blob/main/examples/src/ComposedField.tsx)
+Source: [`examples/src/ComposedField.tsx`](https://github.com/cortexlabs-cc/auditory-cortex/blob/main/examples/src/ComposedField.tsx)
 
 This example mounts every layer, lets you switch between the three modes, and adds bloom. It is the
 same composition as the Cortex Labs `/pulse` visualizer, without the site's models.

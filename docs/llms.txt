@@ -27,4 +27,4 @@ Key facts for code generation:
 
 ## Optional
 
-- [Example source](https://github.com/cortexlabs/auditory-cortex/tree/main/examples/src)
+- [Example source](https://github.com/cortexlabs-cc/auditory-cortex/tree/main/examples/src)
